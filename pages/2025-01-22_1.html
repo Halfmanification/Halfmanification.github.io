@@ -1,6 +1,116 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>Another page!</h1>
-    </body>
+<head>
+    <link rel="stylesheet" href="..\css\style.css">
+</head>
+<body>
+    <h1>Baby steps</h1>
+    <h4><i>22-01-2025</i></h4>
+    <p>I've been trying to start game development for quite some time now, with project after project being started on
+        with great gusto and eagerness, just for that motivation to be blown away after a few days/weeks
+        because a combination of lack of experience in game design, not familiar enough with the tools at hand, and most
+        of all the deep pit of scope creep.
+    </p>
+
+    <p>As a senior software developer and avid video game enjoyer, I figured I could pick up game development
+        without meeting too many hurdles, at least on the technical side of things. I expected the biggest issues I
+        would have was on the art and audio side of things, but as failed project after failed
+        project has shown, I was living a lie. I probably have about 20 unfinished Godot projects a handful of Unity
+        projects, at least 3 c++/OpenGLprojects, and more non-game C# projects than I can count gathering dust in
+        the bowels of my computer. Forget not finishing first, I apparently don't finish at all.</p>
+
+    <p>In my professional life I do mostly back-end .Net development for clients large and small, with some
+        infrastructure and operations work on the side. It's full on enterprise most of the time, with all
+        that follows that good and bad. I often end up in a position of cleaning technical debt, creating standards,
+        building in-house tools and libraries, making frameworks, and generally working towards the
+        impossible: "The perfect code". It never ends up perfect, but I get to pretend while I work that it will end up
+        that way. This approach to development is working fine in the environments I frolic in
+        between 9 to 5, Monday through Friday, but when that same brain tried to take up personal projects the house of
+        card crumbles. The result? Fields of dust bunnies.</p>
+
+    <p>What I am getting at here is that I always end up either out of scope, or so far outside my knowledge that I
+        don't even know how to progress and end up scrapping or abandoning almost all my
+        personal projects. For the games I've tried building, I always set myself up for failure by going after a game
+        design for a game I want to play. Why do I do this? Well it's the most common answer
+        to "how do I get started with game development?". The philosophy is as follows:</p>
+
+    <p>"Just make the game you would want to play. Just start building it, and just build it one step at a time."</p>
+
+    <p>That might work for many, but not for me. I simply cannot build the games I want to play, because the games I
+        want play are too complex for me to give a reasonable scope,
+        build and at the same time learn the tools I'm using (this might be skill issues, but it's my reality
+        regardless). I often end up down the wrong rabbit hole implementing something
+        using the wrong tools in the wrong way. My progress grinds to a halt, and I have dug so much of this rabbit hole
+        that turning back seems almost inconceivable. Of course I recognize
+        this as the classic sunk cost fallacy, and in a professional setting I usually deal just fine with this, but
+        when it's just myself that holds me responsible, and I have no meaningful
+        deadlines, the get out clause "Meh, this project isn't fun anymore, let's do something else fun instead" is
+        readily at hand.</p>
+
+    <p>Then I found the <a href="https://20_games_challenge.gitlab.io/challenge/">20 games challenge</a>. This was a totally different approach than what I had been trying so far,
+        simply ignore what I would want to play, and focus on using
+        predefined, curated game designs to learn the tools and strategies I need to build my own games one day. To add
+        to the arsenal of aids that could keep my projects in check
+        scope-vise I also decided to force myself to use a well defined backlog and task board, and write individual
+        tasks for everything I needed to do. Whenever a feature or task
+        became overwhelming, I would try to split it into multiple more manageable tasks (I know, revolutionary thinking
+        right here). I'd been hesitant to do this before, as I was
+        afraid it would feel too close to work, but since my previous approaches didn't work out I might as well give it
+        a go.</p>
+
+    <p>And it worked! Somewhat at least. The first game on the list is the <a href="https://en.wikipedia.org/wiki/Pong">classic Pong</a>, originally released in 1972 by
+        Atari for arcades, and probably one of the most cloned games ever.</p>
+
+    <p>Development started great, and I was very diligent with writing and completing tasks with a well defined and
+        small scope. It allowed me to leave the computer after
+        each development session feeling that I wasn't in the middle of something, and almost made it so motivation
+        wasn't even a factor any more. Sitting down and picking
+        up a task was very easy. An example of how small a task could be was "Record a simple sound for when the ball
+        hits something". Beautifully simple and easy to do;
+        I just ran around the house with my phone recording stuff hitting other stuff until I found a sound I liked,
+        dragged the sound file into Audacity, learned JUST
+        enough to understand how to cut down the soundbite to just what I needed, and exported it.</p>
+
+    <p>Then when I was about 98% done (or 80% as I thought at the time) with the game, I fell back into my old habits,
+        and everything immediately ground to a halt. I got it in
+        my head that I wanted to add a settings menu, accessible from both the main menu and the pause menu.
+        Buttons were added, but even before I got to designing the Settings menu itself, I stupidly said to myself;
+        "With all of these menus, and now with one menu being access from two different parts of the game,
+        surely this needs to be centralized into a MenuManager of some kind. And while I'm at it, all of these menus
+        share quite of lot of base functionality, like being opened, closed, and possibly having a previous menu
+        it should go back to when closed. Let's create a base class just called 'Menu', and have all the menus inherit
+        from this." </p>
+
+    <p>I know.</p>
+
+    <p>Trust me, I know.</p>
+
+    <p>Keep it simple, stupid.</p>
+
+    <p>Because of this relatively simple, intrusive thought, I ground this simple Pong project to a halt for almost 2
+        weeks. I quickly over complicated everything, made changes in large parts of the game
+        files, and once again felt the boredom and frustration creep in. Of these 2 weeks, the last of them I didn't
+        even open Godot. The dust started gathering.</p>
+
+    <p>Then today, literally the same day as I'm writing this, I finished my game, published it, and wrote this little
+        retrospective article. How? The algorithms recommended this <a href="https://www.youtube.com/watch?v=4jgTCayWlwc">amazing video</a> from
+        the <a href="https://www.youtube.com/@bps.shorts">BPS.shorts YouTube channel</a> about personal engineering projects. I urge you to watch this, especially if you
+        are stuck with any project. The main points I took away from this was a lesson
+        in scope and scope creep, knowing what is worth investing time in, where to take shortcuts or even cut out
+        features completely, and what really matters. What really matters most of the time,
+        and what was the point of this whole exercise of the <a href="https://20_games_challenge.gitlab.io/challenge/">20 games challenge</a> was for me to COMPLETE PROJECTS.</p>
+
+    <p>So in the span of about 2 hours, I reverted ALL of the current changes I had since my last commit to git,
+        deleted 3 tasks (settings menu, menu management, and player controller scheme selection). I opened 3 new tasks:
+    </p>
+    <p>
+        1. Remove settings buttons from all menus.
+        2. Hard code player control schemes, only allowing keyboard controls
+        3. Publish game in itch.io
+    </p>
+    <p>It's 21:44, about 3 hours after I reverted my changes and deleted the old tasks. I only added one more task at
+        the end: "Write a dev-log". The game is published, and playable both single and multiplayer
+        in the browser, and I'm reaching the end of this article. I did it. I finished my project. It is possible.</p>
+</body>
+
 </html>

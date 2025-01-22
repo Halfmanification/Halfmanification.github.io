@@ -1,0 +1,21 @@
+
+body {
+    background-color: #121212;
+    color: #b2bbb0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2em 4em 4em 4em;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+a {
+    color: #4c8441;
+}
+
+a:hover {
+    color: #8ac47e;
+    text-decoration: underline;
+}
