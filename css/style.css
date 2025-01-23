@@ -1,7 +1,51 @@
+:root {
+    /* Primary tints */
+    --primary-a0:  #125d40;
+    --primary-opaque-a0:  #125d4000;
+    --primary-a10: #326e53;
+    --primary-opaque-a10: #326e5300;
+    --primary-a20: #4c7f66;
+    --primary-opaque-a20: #4c7f6600;
+    --primary-a30: #65917b;
+    --primary-opaque-a30: #65917b00;
+    --primary-a40: #7ea38f;
+    --primary-opaque-a40: #7ea38f00;
+    --primary-a50: #97b5a5;
+    --primary-opaque-a50: #97b5a500;
+
+    /* Surface colors */
+    --surface-a0:  #121212;
+    --surface-opaque-a0:  #12121200;
+    --surface-a10: #282828;
+    --surface-opaque-a10: #28282800;
+    --surface-a20: #3f3f3f;
+    --surface-opaque-a20: #3f3f3f00;
+    --surface-a30: #575757;
+    --surface-opaque-a30: #57575700;
+    --surface-a40: #717171;
+    --surface-opaque-a40: #71717100;
+    --surface-a50: #8b8b8b;
+    --surface-opaque-a50: #8b8b8b00;
+
+    /* Tonal surface colors */
+    --tonal-surface-a0:  #151917;
+    --tonal-surface-opaque-a0:  #15191700;
+    --tonal-surface-a10: #2a2e2c;
+    --tonal-surface-opaque-a10: #2a2e2c00;
+    --tonal-surface-a20: #414443;
+    --tonal-surface-opaque-a20: #41444300;
+    --tonal-surface-a30: #595c5b;
+    --tonal-surface-opaque-a30: #595c5b00;
+    --tonal-surface-a40: #727574;
+    --tonal-surface-opaque-a40: #72757400;
+    --tonal-surface-a50: #8d8f8e;
+    --tonal-surface-opaque-a50: #8d8f8e00;
+}
+
 
 body {
-    background-color: #121212;
-    color: #b2bbb0;
+    background-color: var(--surface-a0);
+    color: var(--tonal-surface-a50);
     font-family: Arial, Helvetica, sans-serif;
     padding: 2em 4em 4em 4em;
 }
@@ -35,16 +79,28 @@ a:hover {
 }
 
 .styled-link a {
-    display: inline-block;
+    display: block;
     padding: 8px 12px;
-    background-color: #4c8441;
     color: #b2bbb0;
     text-decoration: none;
-    border-radius: 2px;
     font-weight: 500;
+    border-radius: 4px;
     transition: background-color 0.2s ease;
 }
 
-.styled-link a:hover {
-    background-color: #0056b3;
+.fade_to_right a {
+    background: linear-gradient(
+        to right,
+        var(--surface-a10), 
+        var(--surface-opaque-a10) 
+    );
 }
+
+.fade_to_right a:hover {
+    background: linear-gradient(
+        to right,
+        var(--surface-a30), 
+        var(--surface-opaque-a30) 
+    );
+}
+
