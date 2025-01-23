@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="..\css\style.css">
-    </head>
-    <body>
-        <a href="/pages/2025-01-22_1.html">22-01-2025</a>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halfmanification</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Halfmanification</h1>
+    </header>
+
+    <main>
+        <h2>Pages</h2>
+        <ul class="ul-no-dot styled-link">
+            <!-- Hardcoded links to blog posts -->
+            <li><a href="./pages/2025-01-22_1.html">22-01-2025: Baby steps</a></li>
+        </ul>
+    </main>
+    
+    <footer>
+	    <p>&copy; <span id="current-year"></span> Halfmanification</p>
+    </footer>
+
+    <script>
+	const yearSpan = document.getElementById("current-year");
+	yearSpan.textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>

@@ -23,3 +23,28 @@ a:hover {
     color: #8ac47e;
     text-decoration: underline;
 }
+
+.ul-no-dot {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.styled-link li {
+    margin-bottom: 10px;
+}
+
+.styled-link a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #4c8441;
+    color: #b2bbb0;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.styled-link a:hover {
+    background-color: #0056b3;
+}
