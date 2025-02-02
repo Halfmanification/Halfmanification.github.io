@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="content">
+    <a href="../index.html" class="page-back-button">&lt;&lt;</a>
+    <h1>Flapping forward, hitting pipes along the way</h1>
+    <h4><i>02-02-2025</i></h4>
+
+    <p>So its been about 10 days since I <a href="./2025-01-24_1.html">last wrote about</a> the 20 games challenge.
+        I've only been able to work on Flappy Birds sporadically since then,
+        doing small bursts of development here and there. Here is a brief overview of what has been done so far:</p>
+
+    <ul>
+        <li>24-01-2025: Set up project, repository and wrote some tasks.</li>
+        <li>28-01-2025: Set up the main game scene, and added the bird.</li>
+        <li>29-01-2025: Added pipes that moved accross the screen, and spawned at randomly within a height range.</li>
+        <li>31-01-2025: Added a score counter and refined the code behind collision handling.</li>
+        <li>02-02-2025: Added all remaining art for the main game scene.</li>
+    </ul>
+
+    <p>I noticed an interesting behaviour in my self during these development sessions, where I found it quite easy to
+        find motivation up until I had implemented the core game mechanics. Making the bird flap,
+        the pipes move, score being counted, and collisions handled correctly was something I was motivated to sit down
+        and do. But when I ended the development session on the 31st of January, I suddenly felt
+        a slight dread to continue. I shrugged this off in the moment, but when I got up the next day I felt it even
+        stronger. The game was in some respects finished, "only" missing all the correct art, sound,
+        and menus.
+    </p>
+    <p>
+        Aka, most of the game in this case.
+    </p>
+    <p>
+        My impulses screamed that it would be a lot more fun to go on to the next game immediately at this point. Who
+        cared if the menus, sound and art wasn't done? It wasn't like I was going to sell this game
+        to anyone, so that stuff would just be "fluff" to the game.
+    </p>
+    <p>
+        But I refused, and while out on a quick drive to the nearby grocery store I had a little introspective moment
+        where I dug into these feelings. Why was it always this way? The programming part of any development
+        project is always the easiest for me to do, but all the other aspects of a game (or any software) I find myself
+        shy away from. I'm no artist, and no sound engineer/musician, but I know I'm capable of producing
+        something passable, at least for a small project like this. I'm not sure I have a concrete answer yet, but if I
+        were to guess it has to do partially with stepping outside my comfort zone, producing a less
+        than perfect result (weird that don't feel this about code), or simply the fear of doing things I find somewhat
+        'boring' in my personal time.
+    </p>
+    <p>
+        The stupid thing is that as soon as I start doing any of these non-code tasks, I usually find them a lot more
+        engaging than I initially thought they would be. Sitting with Aseprite open and just doodling
+        while listening to Spotify, or digging through sound bites and music for a fitting sound scape is actually quite
+        enjoyable. And when the art, menus, and sound is in place, the game feels so much more
+        alive than before. I had the same experience with creating Pong, where the moment I had some sound and music in
+        the game I found myself starting it to test, but ending up just playing for fun for 3-4 minutes.
+        So it has to be 'starting' the tasks that I dread. Being in a workflow is easy, but starting work and getting
+        into a flow is hard.
+    </p>
+    <p>
+        So today I did exactly that. I fired up Aseprite and just threw a black line on the screen. No rime or reason to
+        the line, but it was just to draw something as opposed to staring on a blank canvas. And it worked!
+        The black line didn't remain for long, but it served as a kick in my mental behind to get on with drawing the
+        art, and in not more than an hour I had some simple, but quite nice art for the bird, pipes, ground,
+        sky, and the components of a parallaxing background. These were all very quick to add into the game, simply by
+        adding some TextureRects in Godot, and suddenly the game felt 100 times more like a proper game.
+        The final little thing I did today was building a custom shader to create the parallaxing background. And before
+        anyone have time to think "Wow, custom shaders, sounds fancy", this is the shader program in question,
+        and yes, I had to google how to do this:
+    </p>
+    <pre class="code-block">
+<code>shader_type canvas_item;
+
+uniform float scroll_speed;
+
+void vertex() {
+    UV.x += TIME * scroll_speed;
+}</code></pre>
+    <p>
+        So I'm once again beating the drum about just starting and doing something, because once the inertia of moving
+        have you traveling in a direction, there is no knowing how far you will go.
+    </p>
+
+</body>
+
+</html>
