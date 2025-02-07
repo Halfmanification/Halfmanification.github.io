@@ -115,6 +115,15 @@ void vertex() {
             </p>
         </article>
     </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Halfmanification</p>
+    </footer>
+
+    <script>
+        const yearSpan = document.getElementById("current-year");
+        yearSpan.textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

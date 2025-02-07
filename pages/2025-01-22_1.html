@@ -185,9 +185,18 @@
                 in the browser, and I'm reaching the end of this article. I did it. I finished my project. It is
                 possible.
             </p>
-
+            <iframe frameborder="0" src="https://itch.io/embed/3263275?bg_color=2a2e2c&amp;fg_color=97b5a5&amp;border_color=121212" width="552" height="167"><a href="https://halfmanification.itch.io/pong">Pong by Halfmanification</a></iframe>
         </article>
     </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Halfmanification</p>
+    </footer>
+
+    <script>
+        const yearSpan = document.getElementById("current-year");
+        yearSpan.textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
